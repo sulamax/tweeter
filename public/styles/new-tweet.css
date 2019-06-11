@@ -1,0 +1,22 @@
+h2 {
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 15px;
+  border-bottom: solid black 5px;
+}
+
+section.new-tweet {
+  border-radius: 25px;
+  border-style: dotted;
+  padding: 25px 25px 25px 25px
+}
+
+textarea {
+width: 100%;
+padding-top: 10px;
+padding-left: 10px;
+}
+
+span.counter {
+  float: right;
+}
