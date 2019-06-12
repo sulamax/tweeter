@@ -1,14 +1,16 @@
+
 h2 {
   font-size: 40px;
   margin: 0;
   margin-bottom: 15px;
-  border-bottom: solid black 5px;
+  border-bottom: solid black 1px;
 }
 
-section.new-tweet {
+.new-tweet {
   border-radius: 25px;
-  border-style: dotted;
-  padding: 25px 25px 25px 25px
+  border-style: solid;
+  padding: 25px 25px 25px 25px;
+  background-color: white;
 }
 
 textarea {
@@ -17,6 +19,12 @@ padding-top: 10px;
 padding-left: 10px;
 }
 
-span.counter {
+span.countdown {
   float: right;
 }
+
+/*main.container {
+  background-color: white;
+  margin: 0 auto;
+}
+*/

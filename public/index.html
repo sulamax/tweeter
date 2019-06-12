@@ -7,26 +7,67 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i&display=swap" rel="stylesheet">
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
+
+    <link rel="stylesheet" href="/styles/tweeting-hover.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
+
+     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+     <!-- <textarea class="message" rows="2" cols="30"></textarea> -->
+
   </head>
 
   <body>
 
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png" width="80px" height="80px">
+      <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <section class="new-tweet">
+      <h2>Compose Tweet</h2>
+      <form action="/tweets/" method="post">
+        <textarea id="mytextarea" cols="2" rows="2" name="text" placeholder="What are you humming about?" class="message"></textarea>
+        <input id="btn" type="submit" value="Tweet">
+        <span class="countdown">140</span>
+      </form>
+      </section>
+      <div class="all-tweets">
+
+        <section class="tweet-container">
+          <header>
+            <img class="smile" src="https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png">
+            <h1>sus</h1>
+            <p>@MrFields</p>
+            </header>
+            <article>
+              <h4>Little tweet here</h4>
+            </article>
+            <footer>
+              10 days ago
+              <img class="image" src="https://img.icons8.com/windows/24/000000/like.png">
+              <img class="image" src="https://img.icons8.com/metro/23/000000/process.png">
+              <img class="image" src="https://img.icons8.com/metro/28/000000/remove-user-male.png">
+              </main>
+            </footer>
+        </section>
+      </div>
     </main>
 
   </body>
