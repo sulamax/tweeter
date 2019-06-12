@@ -1,0 +1,29 @@
+section.tweet-container {
+  margin-top: 10px;
+  border-radius: 25px;
+  border-style: dotted;
+  padding: 25px 25px 25px 25px;
+  float: left;
+  width: 450px;
+  background-color: white;
+}
+
+.tweet-container h1 h4 {
+  float: left;
+  display: inline-block;
+}
+
+p {
+  float: right;
+}
+
+img.smile {
+  float: left;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+h1 {
+  display: inline-block;
+  margin: 0px;
+}
+
