@@ -5,7 +5,6 @@
  */
 
 
-$(document).ready(function() {
 function renderTweets(tweets) {
 
   // loops through tweets
@@ -32,11 +31,11 @@ const tweetData = {
 $(document).ready(function() {
   function createTweetElement (tweetData) {
     // console.log(tweetData);
-    var $template = `
+    var $template = $(`
       <section class="tweet-container">
           <header>
             <img class="smile" src="https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png">
-            <h1>bill Fields</h1>
+            <h1>Bill MrFields</h1>
             <p>@MrFields</p>
             </header>
             <article>
@@ -50,14 +49,28 @@ $(document).ready(function() {
               </main>
             </footer>
         </section>
-    `
-      return $template
+    `)
+    var $h1 = $template.find('h1');
+    $h1.html(tweetData.user.name);
+
+    var $p = $template.find('p');
+    $p.html(tweetData.user.handle);
+
+    var $h4 = $template.find('h4');
+    $h4.html(tweetData.content.text);
+
+    var $img = $template.find('img');
+    $img.attr('src', tweetData.user.small);
+
+    var $footer = $template.find('footer');
+    $footer.html(tweetData.created_at);
+
+    return $template
     console.log($template);
   }
+
 var $tweet = createTweetElement(tweetData);
 console.log($tweet);
 $('.all-tweets').append($tweet);
 createTweetElement(tweetData);
 });
-
-renderTweets(data);
